@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsJavaModule:JavaModule xmlns:nsJavaModule="http://xcp.emc.com/javamodule" urn="urn:xcel:com.emc.xcp.artifact.javamodule.category:Artifacts/Java Modules/virtualdocumentadding.javamodule" categoryId="com.emc.xcp.artifact.javamodule.category" name="cust_act_tmpl_xcel_virtual_document_adding" label="Virtual Document Adding" implementationClass="com.emc.documentum.extensions.methods.VirtualDocumentAdding">
+
+<implementationJars contentPath="content/modules/custom_activity_template_xcelerator.jar"/>
+</nsJavaModule:JavaModule>

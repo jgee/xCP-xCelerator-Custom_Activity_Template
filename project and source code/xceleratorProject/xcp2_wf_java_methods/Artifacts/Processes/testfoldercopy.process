@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsProcess:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsActivity="http://documentum.com/bpm/activity" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsCommon="http://documentum.com/common" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsProcess="http://documentum.com/bpm/process" urn="urn:xcelwf:com.emc.ide.artifact.process:Artifacts/Processes/testfoldercopy.process" categoryId="com.emc.ide.artifact.process" name="testfoldercopy" label="testFolderCopy">
+  <activities name="Initiate" activityType="INITIATE" priority="Medium" taskName="" taskInstructions="" destFlows="//@flows[name='L1']">
+    <trigger canRunMultipleTimes="true"/>
+    <transition xsi:type="nsActivity:AllFlowsTransition"/>
+    <uiinfo imageScale="100" image="palette/event_start_32_proc.png">
+      <topLeftPoint x="50" y="150"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </uiinfo>
+    <performerConfig xsi:type="nsActivity:DefaultInitiatePerformerConfiguration"/>
+    <taskContract categoryId="com.emc.ide.artifact.process.activity.taskcontract" name="testfoldercopy_initiate" label="Initiate">
+      <dataServiceContracts xsi:type="nsDataserviceContract:DataActionContract" categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_create_testfoldercopy_initiate" label="Initiate Process testFolderCopy" implCategoryId="com.emc.ide.artifact.process.activity.taskcontract">
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processVariables" label="Variables"/>
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processPackages" label="Packages"/>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="attachments" label="Attachments" repeating="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <primaryElement name="testfoldercopy_initiate" dataModel="//@activities[name='Initiate']/@taskContract"/>
+        <actionType type="Create"/>
+      </dataServiceContracts>
+    </taskContract>
+  </activities>
+  <activities name="Execute Java Service" activityType="BEGIN" description="" priority="Medium" taskName="" taskInstructions="" sourceFlows="//@flows[name='L1']" destFlows="//@flows[name='L2']">
+    <trigger numOfInputFlows="1" expectedEventName="" canRunMultipleTimes="true"/>
+    <transition xsi:type="nsActivity:AllFlowsTransition"/>
+    <timers/>
+    <calendar flag="Performer"/>
+    <uiinfo imageScale="100" image="activity_autoint_48x32_proc.png">
+      <topLeftPoint x="153" y="155"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </uiinfo>
+    <performerConfig xsi:type="nsActivity:SvcDefBasedOutboundPerformerConfiguration" timeout="60" serviceDefinition="&lt;?xml version=&quot;1.0&quot;?>&#xA;&lt;ServiceDefinition xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;activity.xsd&quot;>&#xA;    &lt;Name>Invoke Java&lt;/Name>&#xA;    &lt;RuntimeModuleName>BOFModuleRuntimeModule&lt;/RuntimeModuleName>&#xA;    &lt;DesignModuleName>InvokeJavaActivityPanel&lt;/DesignModuleName>&#xA;    &lt;Configuration>&#xA;        &lt;Parameter>&#xA;            &lt;Name>arg2Type&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[java.lang.String]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>BOF_METHOD_NAME_CONFIG_PARAM&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[doTask]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>BOF_INTERFACE_NAME_CONFIG_PARAM&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[com.emc.documentum.extensions.methods.FolderCopy]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>arg0Type&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[java.lang.String]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>arg4Type&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[java.io.PrintWriter]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>arg3Type&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[boolean]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>BOF_MODULE_NAME_CONFIG_PARAM&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[urn:xcel:com.emc.xcp.artifact.javamodule.category:Artifacts/Java Modules/foldercopy.javamodule]]>&lt;/Value>&#xA;            &lt;Type>ModuleName&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>arg1Type&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[java.lang.String]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;    &lt;/Configuration>&#xA;    &lt;InputMsgCopyRules>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>25&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Execution Data/workitem[0]/id&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/Arguments/arg0(2)&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>41&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>&quot;/Temp&quot;&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/Arguments/arg1(2)&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>57&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>&quot;/Temp/RobTest&quot;&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/Arguments/arg2(2)&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;    &lt;/InputMsgCopyRules>&#xA;    &lt;OutputMsgCopyRules/>&#xA;    &lt;CorrelationMsgCopyRules/>&#xA;    &lt;UserDefinedInputTreeNodes/>&#xA;    &lt;UserDefinedOutputTreeNodes/>&#xA;    &lt;InputSchemaConfigs/>&#xA;    &lt;OutputSchemaConfigs/>&#xA;&lt;/ServiceDefinition>&#xA;">
+      <performer>
+        <dataResolutionConfig xsi:type="nsCommon:PredefinedResolutionConfig"/>
+      </performer>
+      <methodFailure/>
+    </performerConfig>
+    <eventConfigs label="Activity Completed">
+      <triggerType type="PROCESS_ACTIVITY_COMPLETED"/>
+    </eventConfigs>
+  </activities>
+  <activities name="Manual task" activityType="END" priority="Medium" taskName="" taskInstructions="" sourceFlows="//@flows[name='L2']">
+    <trigger canRunMultipleTimes="true"/>
+    <transition xsi:type="nsActivity:AllFlowsTransition"/>
+    <uiinfo imageScale="100" image="palette/activity_manual_48x32_proc.png">
+      <topLeftPoint x="265" y="143"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </uiinfo>
+    <performerConfig xsi:type="nsActivity:ManualPerformerConfiguration">
+      <performerList assignmentPolicy="NotApplicable">
+        <performers xsi:type="nsActivity:User">
+          <dataResolutionConfig xsi:type="nsCommon:PredefinedResolutionConfig"/>
+        </performers>
+      </performerList>
+      <performerOperation/>
+    </performerConfig>
+    <eventConfigs label="Activity Started">
+      <triggerType type="PROCESS_ACTIVITY_STARTED"/>
+    </eventConfigs>
+    <eventConfigs label="Task Started">
+      <triggerType type="PROCESS_TASK_STARTED"/>
+    </eventConfigs>
+    <eventConfigs label="Task Acquired">
+      <triggerType type="PROCESS_TASK_ACQUIRED"/>
+    </eventConfigs>
+    <eventConfigs label="Task Delegated">
+      <triggerType type="PROCESS_TASK_DELEGATED"/>
+    </eventConfigs>
+    <eventConfigs label="Task Suspended">
+      <triggerType type="PROCESS_TASK_SUSPENDED"/>
+    </eventConfigs>
+    <eventConfigs label="Task Unsuspended">
+      <triggerType type="PROCESS_TASK_UNSUSPENDED"/>
+    </eventConfigs>
+    <eventConfigs label="Task Completed">
+      <triggerType type="PROCESS_TASK_COMPLETED"/>
+    </eventConfigs>
+    <eventConfigs label="Activity Completed">
+      <triggerType type="PROCESS_ACTIVITY_COMPLETED"/>
+    </eventConfigs>
+    <taskContract categoryId="com.emc.ide.artifact.process.activity.taskcontract" name="testfoldercopy_manual_task" label="Manual task">
+      <dataServiceContracts xsi:type="nsDataserviceContract:DataActionContract" categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_delegate_testfoldercopy_manual_task" label="Delegate task Manual task (testFolderCopy) " implCategoryId="com.emc.ide.artifact.process.activity.taskcontract">
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processVariables" label="Variables"/>
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processPackages" label="Packages"/>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="attachments" label="Attachments" repeating="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id" label="id">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="userName" label="userName" required="true" repeating="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <primaryElement name="testfoldercopy_manual_task" dataModel="//@activities[name='Manual%20task']/@taskContract"/>
+        <actionType type="DelegateTask"/>
+      </dataServiceContracts>
+      <dataServiceContracts xsi:type="nsDataserviceContract:DataActionContract" categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_repeat_testfoldercopy_manual_task" label="Repeat task Manual task (testFolderCopy)" implCategoryId="com.emc.ide.artifact.process.activity.taskcontract">
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processVariables" label="Variables"/>
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processPackages" label="Packages"/>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="attachments" label="Attachments" repeating="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id" label="id">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="userName" label="userName" required="true" repeating="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <primaryElement name="testfoldercopy_manual_task" dataModel="//@activities[name='Manual%20task']/@taskContract"/>
+        <actionType type="RepeatTask"/>
+      </dataServiceContracts>
+      <dataServiceContracts xsi:type="nsDataserviceContract:DataActionContract" categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_complete_testfoldercopy_manual_task" label="Complete task Manual task (testFolderCopy)" implCategoryId="com.emc.ide.artifact.process.activity.taskcontract">
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processVariables" label="Variables"/>
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processPackages" label="Packages"/>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="attachments" label="Attachments" repeating="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id" label="id">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <primaryElement name="testfoldercopy_manual_task" dataModel="//@activities[name='Manual%20task']/@taskContract"/>
+        <actionType type="CompleteTask"/>
+      </dataServiceContracts>
+      <dataServiceContracts xsi:type="nsDataserviceContract:DataActionContract" categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_update_testfoldercopy_manual_task" label="Update task Manual task (testFolderCopy)" implCategoryId="com.emc.ide.artifact.process.activity.taskcontract">
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processVariables" label="Variables"/>
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processPackages" label="Packages"/>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="attachments" label="Attachments" repeating="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id" label="id">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <primaryElement name="testfoldercopy_manual_task" dataModel="//@activities[name='Manual%20task']/@taskContract"/>
+        <actionType type="UpdateTask"/>
+      </dataServiceContracts>
+    </taskContract>
+  </activities>
+  <processData/>
+  <flows name="L1" from="//@activities[name='Initiate']" to="//@activities[name='Execute%20Java%20Service']">
+    <uiinfo destActivityLocIndex="1">
+      <line multiSegment="true">
+        <points x="71" y="150"/>
+        <points x="97" y="150"/>
+        <points x="97" y="155"/>
+        <points x="124" y="155"/>
+        <points x="35" y="149"/>
+        <points x="65" y="149"/>
+        <points x="66" y="144"/>
+        <points x="97" y="144"/>
+        <points x="97" y="143"/>
+        <points x="129" y="143"/>
+        <points x="66" y="144"/>
+        <points x="97" y="144"/>
+        <points x="97" y="143"/>
+        <points x="129" y="143"/>
+      </line>
+      <labelStyle fontName="Helvetica" fontSize="10"/>
+    </uiinfo>
+  </flows>
+  <flows name="L2" from="//@activities[name='Execute%20Java%20Service']" to="//@activities[name='Manual%20task']">
+    <uiinfo destActivityLocIndex="1">
+      <line multiSegment="true">
+        <points x="182" y="155"/>
+        <points x="209" y="155"/>
+        <points x="209" y="143"/>
+        <points x="236" y="143"/>
+        <points x="151" y="142"/>
+        <points x="181" y="142"/>
+        <points x="177" y="143"/>
+        <points x="209" y="143"/>
+        <points x="209" y="137"/>
+        <points x="241" y="137"/>
+        <points x="177" y="143"/>
+        <points x="209" y="143"/>
+        <points x="209" y="137"/>
+        <points x="241" y="137"/>
+      </line>
+      <labelStyle fontName="Helvetica" fontSize="10"/>
+    </uiinfo>
+  </flows>
+  <defaultSettings/>
+  <processUIInfo>
+    <startActivityUIInfo imageScale="100" image="palette/event_start_32_proc.png">
+      <topLeftPoint x="50" y="150"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </startActivityUIInfo>
+    <endActivityUIInfo imageScale="100" image="palette/event_end_32_proc.png">
+      <topLeftPoint x="348" y="150"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </endActivityUIInfo>
+    <endSequenceFlowUIInfo destActivityLocIndex="4">
+      <line multiSegment="true">
+        <points x="289" y="137"/>
+        <points x="311" y="137"/>
+        <points x="311" y="138"/>
+        <points x="333" y="138"/>
+      </line>
+      <labelStyle fontName="Helvetica" fontSize="10"/>
+    </endSequenceFlowUIInfo>
+  </processUIInfo>
+  <eventConfigs label="Workflow Started">
+    <triggerType type="PROCESS_WORKFLOW_STARTED"/>
+  </eventConfigs>
+  <eventConfigs label="Workflow changed state">
+    <triggerType type="PROCESS_WORKFLOW_CHANGESTATE"/>
+  </eventConfigs>
+  <eventConfigs label="Workflow Aborted">
+    <triggerType type="PROCESS_WORKFLOW_ABORTED"/>
+  </eventConfigs>
+  <eventConfigs label="Workflow completed">
+    <triggerType type="PROCESS_WORKFLOW_COMPLETED"/>
+  </eventConfigs>
+</nsProcess:Process>

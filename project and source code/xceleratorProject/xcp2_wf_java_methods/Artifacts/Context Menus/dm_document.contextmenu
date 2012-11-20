@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contextmenu:ContextMenu xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:contextmenu="http://www.emc.com/xcp2/2010/contextmenu" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" urn="urn:xcelwf:com.emc.xcp.artifact.contextmenu:Artifacts/Context Menus/dm_document.contextmenu" categoryId="com.emc.xcp.artifact.contextmenu" name="dm_document" label="Context Menu">
+  <primaryModel href="urn:xcp:com.emc.xcp.artifact.doc:Artifacts/Content/dm_document.content#/"/>
+  <items xsi:type="contextmenu:GotoPageItem" label="View">
+    <actionProperties name="menu_action_name" value="view"/>
+    <actionProperties name="default_link" value="true" type="BOOLEAN"/>
+    <page href="urn:xcelwf:com.emc.xcp.artifact.page:Artifacts/Pages/view_base_content.page#/"/>
+  </items>
+  <items label="Download">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_downloadfile"/>
+  </items>
+  <items label="Edit Content">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_editfile"/>
+  </items>
+  <items label="Cancel Editing">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_canceledit"/>
+  </items>
+  <items label="Import New Version...">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_importnewversion"/>
+  </items>
+  <items xsi:type="contextmenu:SeperatorItem"/>
+  <items label="Cut">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_cut"/>
+  </items>
+  <items label="Copy">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_copy"/>
+  </items>
+  <items xsi:type="contextmenu:SeperatorItem"/>
+  <items xsi:type="contextmenu:SeperatorItem"/>
+  <items xsi:type="contextmenu:GotoPageItem" label="Edit Info">
+    <actionProperties name="menu_action_name" value="edit"/>
+    <page href="urn:xcelwf:com.emc.xcp.artifact.page:Artifacts/Pages/edit_base_content.page#/"/>
+  </items>
+  <items xsi:type="contextmenu:SeperatorItem"/>
+  <items xsi:type="contextmenu:DataActionItem" label="Delete">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="delete"/>
+    <actionProperties name="showConfirmation" value="true" type="BOOLEAN"/>
+    <actionProperties name="showSuccess" value="true" type="BOOLEAN"/>
+    <actionProperties name="redirect_style" value="current"/>
+    <dataAction>
+      <contract xsi:type="nsDataserviceContract:DataActionContract" href="urn:xcp:com.emc.xcp.artifact.doc:Artifacts/Content/dm_document.content#//@dataActionContracts[name='da_def_delete_dm_document']"/>
+    </dataAction>
+  </items>
+</contextmenu:ContextMenu>

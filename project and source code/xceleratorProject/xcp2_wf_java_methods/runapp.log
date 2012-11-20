@@ -1,0 +1,570 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building xcp2_wf_java_methods 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ xcp2_wf_java_methods ---
+[INFO] Deleting C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\target
+[INFO] 
+[INFO] --- xcp-validate:1.0.4:run (xcp-validate) @ xcp2_wf_java_methods ---
+[WARNING] Task page for the activity "Initiate" in process "testPackageAttachmentsAttaching" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testPackageAttachmentsAttaching" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testPackageAttrsCompare" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testPackageAttrsCompare" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testWordDocumentFilling" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testWordDocumentFilling" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testWorkflowDeadlineScheduling" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testWorkflowDeadlineScheduling" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testPackageDocumentExisting" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testPackageDocumentExisting" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testDocumentsCopy" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testDocumentsCopy" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testCSVtoXMLTransform" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testCSVtoXMLTransform" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testAttachmentFolderDownload" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testAttachmentFolderDownload" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testDocumentCopy" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testDocumentCopy" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testPackageStringAttrFilling" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testPackageStringAttrFilling" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testPackageAttrIncr" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testPackageAttrIncr" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testPackageDocumentAttaching" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testPackageDocumentAttaching" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testDocumentCreation" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testDocumentCreation" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testWorkflowCleaning" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testWorkflowCleaning" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testFopXmlTopDfTrans" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testFopXmlTopDfTrans" does not exist.
+[WARNING] Task page for the activity "Initiate" in process "testFolderCopy" does not exist.
+[WARNING] Task page for the activity "Manual task" in process "testFolderCopy" does not exist.
+[INFO] Finished validating project 'xcp2_wf_java_methods' in 1652ms
+[INFO] 
+[INFO] --- xcp-generate-sources:1.0.4:run (xcp-generate-sources) @ xcp2_wf_java_methods ---
+[INFO] Finished executing project generators in....45ms
+[WARNING] Ignoring action flow config generation for : testpackageattrsc_3
+[WARNING] Ignoring action flow config generation for : testfopxmltopdftr_3
+[WARNING] Ignoring action flow config generation for : testpackageattrin_3
+[WARNING] Ignoring action flow config generation for : testpackagestring_3
+[WARNING] Ignoring action flow config generation for : testfoldercopy_ma_2
+[WARNING] Ignoring action flow config generation for : testdocumentscopy_2
+[INFO] Generating Action flow config for action flow : base_folder_1
+[INFO] Generating Action flow config for action flow : base_folder
+[WARNING] Ignoring action flow config generation for : testworkflowdeadl_3
+[WARNING] Ignoring action flow config generation for : testworddocumentf_3
+[WARNING] Ignoring action flow config generation for : testpackageattach_3
+[WARNING] Ignoring action flow config generation for : testdocumentcopy__2
+[WARNING] Ignoring action flow config generation for : testpackagedocume_4
+[WARNING] Ignoring action flow config generation for : testdocumentcreat_3
+[WARNING] Ignoring action flow config generation for : testpackagedocume_7
+[WARNING] Ignoring action flow config generation for : testworkflowclean_3
+[WARNING] Ignoring action flow config generation for : testattachmentfol_3
+[WARNING] Ignoring action flow config generation for : testcsvtoxmltrans_3
+[INFO] Finished executing artifact generators in....12735ms
+[INFO] Finished generating code for project 'xcp2_wf_java_methods' in 12784ms
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ xcp2_wf_java_methods ---
+[WARNING] Using platform encoding (UTF8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ xcp2_wf_java_methods ---
+[WARNING] File encoding has not been set, using platform encoding UTF8, i.e. build is platform dependent!
+[INFO] Compiling 379 source files to C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:testResources (default-testResources) @ xcp2_wf_java_methods ---
+[WARNING] Using platform encoding (UTF8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ xcp2_wf_java_methods ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.7.1:test (default-test) @ xcp2_wf_java_methods ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- xcp-dar:1.0.6:run (xcp-dar) @ xcp2_wf_java_methods ---
+[INFO] 
+[INFO] Started create dar package for project 'xcp2_wf_java_methods'
+[INFO] Artifact 'Artifacts/Action Flows/testattachmentfol_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Pages/edit_base_content.page' added to the package
+[INFO] Artifact 'Artifacts/Processes/testworddocumentfil.process' added to the package
+[INFO] Artifact 'Artifacts/Processes/testcsvtoxmltransfo.process' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/virtualdocumenttransformation.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testworddocumentf_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackageattrsc_3.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Processes/testattachmentfolde.process' added to the package
+[INFO] Artifact 'Artifacts/Processes/testdocumentcopy.process' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testfoldercopy_manu.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testdocumentcreat_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/fopxmltopdftransformation.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackageattach_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Viewer Formats/viewerformatmapping.viewerformat' added to the package
+[INFO] Artifact 'Artifacts/Processes/testpackagedocume_1.process' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/packagelifecyclesuspend.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/documentcreation.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/workflowcleaning.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/documentcopy.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Context Menus/dm_folder.contextmenu' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/base_folder_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Processes/testworkflowcleanin.process' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testworkflowclean_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/base_folder.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testdocumentcopy_ma.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Processes/testfoldercopy.process' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackageattrin_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testworkflowdeadl_3.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/packageattachmentsattaching.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackagedocume_7.actionflow' added to the package
+[INFO] Artifact 'Artifacts/UI Steps/base_folder_step_1.uistep' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackagedocume_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/foldercopy.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testfopxmltopdftr_3.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackagedocume_3.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Pages/page_not_found.page' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testattachmentfol_3.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackageattrsc_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/virtualdocumentpermissionsetting.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testdocumentscopy_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackageattrin_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/packageattributescomparison.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testattachmentfol_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testworkflowdeadl_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Processes/testpackagestringat.process' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testcsvtoxmltrans_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackagestring_3.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testworkflowclean_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Pages/application_parameter.page' added to the package
+[INFO] Artifact 'Artifacts/Processes/testdocumentcreatio.process' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testdocumentscopy_m.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testdocumentcreat_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackagedocume_6.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Pages/view_base_content.page' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackagestring_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Pages/view_base_folder.page' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testfoldercopy_ma_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/documentlifecyclemotion.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testworddocumentf_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Processes/testpackageattachme.process' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testworkflowclean_3.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testdocumentcreat_3.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/virtualdocumentadding.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Processes/testpackageattrscom.process' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackageattrsc_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Processes/testworkflowdeadlin.process' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackageattrin_3.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Pages/edit_base_folder.page' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/attachmentsfolderdownload.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Runtime App Configurations/runtimeappconfig.rtappconfig' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/documentlifecycleapplication.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/worddocumentfilling.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Pages/role_member.page' added to the package
+[INFO] Artifact 'Artifacts/Processes/testpackageattrincr.process' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testfopxmltopdftr_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Pages/application_master.page' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testdocumentcopy__1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/packagedocumentexisting.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/packageattributeincrement.javamodule' added to the package
+[INFO] Artifact 'Artifacts/UI Steps/base_folder_1_step_.uistep' added to the package
+[INFO] Artifact 'Artifacts/Pages/manage_app_role.page' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testfoldercopy_ma_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testcsvtoxmltrans_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackageattach_3.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testfopxmltopdftr_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Pages/view_base_folder1.page' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/documentscopy.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testcsvtoxmltrans_3.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackagestring_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Processes/testpackagedocument.process' added to the package
+[INFO] Artifact 'Artifacts/Processes/testdocumentscopy.process' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/packagedocumentattaching.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testdocumentscopy_1.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Context Menus/dm_document.contextmenu' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackagedocume_5.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/csvtoxmltransformation.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackageattach_2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testworddocumentf_3.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testdocumentcopy__2.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/workflowdeadlinescheduling.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Pages/appmaster_defpage.page' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testpackagedocume_4.actionflow' added to the package
+[INFO] Artifact 'Artifacts/Pages/user_preferences.page' added to the package
+[INFO] Artifact 'Artifacts/Java Modules/packagestringattributefilling.javamodule' added to the package
+[INFO] Artifact 'Artifacts/Processes/testfopxmltopdftran.process' added to the package
+[INFO] Artifact 'Artifacts/Action Flows/testworkflowdeadl_2.actionflow' added to the package
+[INFO] Added manifest file to package
+[INFO] Added index file to package
+[INFO] Finished creating dar package for project 'xcp2_wf_java_methods'
+[INFO] Dar creation for project 'xcp2_wf_java_methods' took 507ms
+[INFO] 
+[INFO] Started packaging local library dependencies for application project '[XCPProject: xcp2_wf_java_methods]'
+[INFO] Packaged local library dependencies for project 'xcp2_wf_java_methods' in 6ms
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ xcp2_wf_java_methods ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [xcp2_wf_java_methods] in [C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\target\xcelwf-xcp2_wf_java_methods-1.0.0]
+[INFO] Processing war project
+[INFO] Copying webapp webResources [C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\Artifacts] to [C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\target\xcelwf-xcp2_wf_java_methods-1.0.0]
+[INFO] Copying webapp webResources [C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\content] to [C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\target\xcelwf-xcp2_wf_java_methods-1.0.0]
+[INFO] Copying webapp webResources [C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\lib] to [C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\target\xcelwf-xcp2_wf_java_methods-1.0.0]
+[INFO] Copying webapp webResources [C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\.] to [C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\target\xcelwf-xcp2_wf_java_methods-1.0.0]
+[INFO] Copying webapp resources [C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\src\main\webapp]
+[INFO] Webapp assembled in [5314 msecs]
+[INFO] Building war: C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\target\xcelwf-xcp2_wf_java_methods-1.0.0.war
+[WARNING] Warning: selected war files include a WEB-INF/web.xml which will be ignored 
+(webxml attribute is missing from war task, or ignoreWebxml attribute is specified as 'true')
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ xcp2_wf_java_methods ---
+[INFO] Installing C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\target\xcelwf-xcp2_wf_java_methods-1.0.0.war to C:\Users\dmadmin\.m2\repository\xcelwf\xcp2_wf_java_methods\1.0.0\xcp2_wf_java_methods-1.0.0.war
+[INFO] Installing C:\xCPDesigner\Applications\xcp2_wf_java_methods\xcp2_wf_java_methods\pom.xml to C:\Users\dmadmin\.m2\repository\xcelwf\xcp2_wf_java_methods\1.0.0\xcp2_wf_java_methods-1.0.0.pom
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.5:deploy (default-deploy) @ xcp2_wf_java_methods ---
+[INFO] Skipping artifact deployment
+[INFO] 
+[INFO] --- xcp-deploy:1.0.6:run (xcp-deploy) @ xcp2_wf_java_methods ---
+[INFO] config file selected =/configuration/xcp2_config.xml
+[INFO] Setting xms server host to xcp20betacs
+[INFO] Setting xms server port to 7070
+[INFO] Setting xms server username to admin
+[INFO] Setting xms server password to a non-null value
+[INFO] Invoked xms client to deploy app
+[INFO] Using environment:RC1
+[INFO] Deploying application - app deploy command start
+[INFO] Using environment:RC1
+[INFO] Application Name = xcp2_wf_java_methods
+[INFO] Application Package Location = C:\tcserver\xmsagentinstance\webapps\xms-server\WEB-INF\work\c10af232-5e1e-4cbc-b339-6602845b3aa0\payload_ac0fc856-a4d2-4f67-8f08-2982f256abd5_unzipped\19f8d39e-728c-4b1f-a52a-41850cb0e2b3
+[INFO] Deploy Method = FULL
+[INFO] Data Policy = CLEAN
+[INFO] Deploy Env = DEV
+[INFO] Environment = RC1
+[INFO] Validate only  = false
+[INFO] Xplore Indexing  = true
+[INFO] Running validate phase
+[INFO] Started SearchDeployer 'Validate'
+[INFO] xPlore connection details: host = 'xcp20beta' port = '9300' password = '*****' collection = 'default' domain = 'xcp'
+[INFO] Index Agent connection details: host = 'xcp20beta' port = '9200' user = 'emcadmin' password = '*****' server name = 'IndexAgent' docbase = 'xcp' instance Name = 'xcp20beta_9200_IndexAgent'
+[INFO] No index definition is required for this application.
+[INFO] No need to update the index definition on xPlore (all subpaths are already defined)
+[INFO] No actions are required on xPlore for the application.
+[INFO] Finished executing SearchDeployer 'Validate' (Execution time = 3 secs)
+[INFO] Finished Running validate phase in....5secs
+[INFO] Running pre deploy phase
+[INFO] Started SearchDeployer 'PreDeploy'
+[INFO] No actions needed during xPlore PreDeploy
+[INFO] Finished executing SearchDeployer 'PreDeploy' (Execution time = 0 secs)
+[INFO] Finished Running pre deploy phase in....0secs
+[INFO] Running deploy phase
+[INFO] Started executing Repository deployment
+[INFO] Started Application deployment into repository
+[INFO] Starting project 'xcpcore' deployment
+[INFO] Finished project 'xcpcore' deployment
+[INFO] Starting project 'xcpcommons' deployment
+[INFO] Finished project 'xcpcommons' deployment
+[INFO] Starting project 'xcp2_wf_java_methods' deployment
+[INFO] Deleting object 'dm_process:4b0004d28000add1'.
+[INFO] Deleted object 'dm_process:4b0004d28000add1'.
+[INFO] Deleting object 'dm_process:4b0004d28000adcd'.
+[INFO] Deleted object 'dm_process:4b0004d28000adcd'.
+[INFO] Deleting object 'dm_process:4b0004d28000ad7e'.
+[INFO] Deleted object 'dm_process:4b0004d28000ad7e'.
+[INFO] Deleting object 'dm_process:4b0004d28000adce'.
+[INFO] Deleted object 'dm_process:4b0004d28000adce'.
+[INFO] Deleting object 'dm_process:4b0004d28000ad7a'.
+[INFO] Deleted object 'dm_process:4b0004d28000ad7a'.
+[INFO] Deleting object 'dm_process:4b0004d28000ad80'.
+[INFO] Deleted object 'dm_process:4b0004d28000ad80'.
+[INFO] Artifact 'testFopXmlTopDfTrans' installed into repository ...Success
+[INFO] Artifact 'Package Attributes Comparison' installed into repository ...Success
+[INFO] Artifact 'Word Document Filling' installed into repository ...Success
+[INFO] Artifact 'testPackageDocumentAttaching' installed into repository ...Success
+[INFO] Artifact 'testWordDocumentFilling' installed into repository ...Success
+[INFO] Artifact 'testWorkflowDeadlineScheduling' installed into repository ...Success
+[INFO] Artifact 'Package String Attribute Filling' installed into repository ...Success
+[INFO] Artifact 'Fop Xml To Pdf Transformation' installed into repository ...Success
+[INFO] Artifact 'Package Lifecycle Suspend' installed into repository ...Success
+[INFO] Artifact 'Package Attribute Increment' installed into repository ...Success
+[INFO] Artifact 'testPackageStringAttrFilling' installed into repository ...Success
+[INFO] Artifact 'Document Copy' installed into repository ...Success
+[INFO] Artifact 'testDocumentCreation' installed into repository ...Success
+[INFO] Artifact 'testCSVtoXMLTransform' installed into repository ...Success
+[INFO] Artifact 'Package Document Existing' installed into repository ...Success
+[INFO] Artifact 'testPackageDocumentExisting' installed into repository ...Success
+[INFO] Artifact 'testDocumentCopy' installed into repository ...Success
+[INFO] Artifact 'Document Lifecycle Motion' installed into repository ...Success
+[INFO] Artifact 'Package Attachments Attaching' installed into repository ...Success
+[INFO] Artifact 'Document Copy' installed into repository ...Success
+[INFO] Artifact 'Virtual Document Permission Setting' installed into repository ...Success
+[INFO] Artifact 'testWorkflowCleaning' installed into repository ...Success
+[INFO] Artifact 'testAttachmentFolderDownload' installed into repository ...Success
+[INFO] Artifact 'testFolderCopy' installed into repository ...Success
+[INFO] Artifact 'Package Document Attaching' installed into repository ...Success
+[INFO] Artifact 'Attachments Folder Download' installed into repository ...Success
+[INFO] Artifact 'testDocumentsCopy' installed into repository ...Success
+[INFO] Artifact 'Virtual Document Transformation' installed into repository ...Success
+[INFO] Artifact 'Virtual Document Adding' installed into repository ...Success
+[INFO] Artifact 'Folder Copy' installed into repository ...Success
+[INFO] Artifact 'Document Lifecycle Application' installed into repository ...Success
+[INFO] Artifact 'Document Creation' installed into repository ...Success
+[INFO] Artifact 'testPackageAttrIncr' installed into repository ...Success
+[INFO] Artifact 'Workflow Deadline Scheduling' installed into repository ...Success
+[INFO] Artifact 'testPackageAttrsCompare' installed into repository ...Success
+[INFO] Artifact 'Workflow Cleaning' installed into repository ...Success
+[INFO] Artifact 'Csv To Xml Transformation' installed into repository ...Success
+[INFO] Artifact 'testPackageAttachmentsAttaching' installed into repository ...Success
+[INFO] Started executing Artifact 'testPackageAttachmentsAttaching' post install action
+[INFO] Artifact 'testPackageAttachmentsAttaching' post install action executed...Success
+[INFO] Artifact 'testPackageAttachmentsAttaching' post install action executed...Success
+[INFO] Started executing Artifact 'testWorkflowCleaning' post install action
+[INFO] Artifact 'testWorkflowCleaning' post install action executed...Success
+[INFO] Artifact 'testWorkflowCleaning' post install action executed...Success
+[INFO] Started executing Artifact 'testPackageStringAttrFilling' post install action
+[INFO] Artifact 'testPackageStringAttrFilling' post install action executed...Success
+[INFO] Artifact 'testPackageStringAttrFilling' post install action executed...Success
+[INFO] Started executing Artifact 'testPackageDocumentExisting' post install action
+[INFO] Artifact 'testPackageDocumentExisting' post install action executed...Success
+[INFO] Artifact 'testPackageDocumentExisting' post install action executed...Success
+[INFO] Started executing Artifact 'testFolderCopy' post install action
+[INFO] Artifact 'testFolderCopy' post install action executed...Success
+[INFO] Artifact 'testFolderCopy' post install action executed...Success
+[INFO] Started executing Artifact 'testPackageAttrsCompare' post install action
+[INFO] Artifact 'testPackageAttrsCompare' post install action executed...Success
+[INFO] Artifact 'testPackageAttrsCompare' post install action executed...Success
+[INFO] Started executing Artifact 'testDocumentCopy' post install action
+[INFO] Artifact 'testDocumentCopy' post install action executed...Success
+[INFO] Artifact 'testDocumentCopy' post install action executed...Success
+[INFO] Started executing Artifact 'testPackageDocumentAttaching' post install action
+[INFO] Artifact 'testPackageDocumentAttaching' post install action executed...Success
+[INFO] Artifact 'testPackageDocumentAttaching' post install action executed...Success
+[INFO] Started executing Artifact 'testWorkflowDeadlineScheduling' post install action
+[INFO] Artifact 'testWorkflowDeadlineScheduling' post install action executed...Success
+[INFO] Artifact 'testWorkflowDeadlineScheduling' post install action executed...Success
+[INFO] Started executing Artifact 'testCSVtoXMLTransform' post install action
+[INFO] Artifact 'testCSVtoXMLTransform' post install action executed...Success
+[INFO] Artifact 'testCSVtoXMLTransform' post install action executed...Success
+[INFO] Started executing Artifact 'testWordDocumentFilling' post install action
+[INFO] Artifact 'testWordDocumentFilling' post install action executed...Success
+[INFO] Artifact 'testWordDocumentFilling' post install action executed...Success
+[INFO] Started executing Artifact 'testFopXmlTopDfTrans' post install action
+[INFO] Artifact 'testFopXmlTopDfTrans' post install action executed...Success
+[INFO] Artifact 'testFopXmlTopDfTrans' post install action executed...Success
+[INFO] Started executing Artifact 'testAttachmentFolderDownload' post install action
+[INFO] Artifact 'testAttachmentFolderDownload' post install action executed...Success
+[INFO] Artifact 'testAttachmentFolderDownload' post install action executed...Success
+[INFO] Started executing Artifact 'testDocumentsCopy' post install action
+[INFO] Artifact 'testDocumentsCopy' post install action executed...Success
+[INFO] Artifact 'testDocumentsCopy' post install action executed...Success
+[INFO] Started executing Artifact 'testPackageAttrIncr' post install action
+[INFO] Artifact 'testPackageAttrIncr' post install action executed...Success
+[INFO] Artifact 'testPackageAttrIncr' post install action executed...Success
+[INFO] Started executing Artifact 'testDocumentCreation' post install action
+[INFO] Artifact 'testDocumentCreation' post install action executed...Success
+[INFO] Artifact 'testDocumentCreation' post install action executed...Success
+[INFO] Finished project 'xcp2_wf_java_methods' deployment
+[INFO] Finished Application deployment into repository
+[INFO] Notifying Method Server to Invalidate cache
+[INFO] Executing request http://xcp20betaCS:9080/bpm/servlet/InvalidateCache
+[INFO] Response status code: 200
+[INFO] Response reason: OK
+[INFO] Method Server successfully invalidated cache on http://xcp20betaCS:9080/bpm/servlet/InvalidateCache
+[INFO] Finished executing Repository deployment
+[INFO] Repository recipe execution time = '96 secs
+[INFO] Started SearchDeployer 'Deploy'
+[INFO] No index definition update is needed on xPlore
+[INFO] No index rebuild required.
+[INFO] No refeed is required.
+[INFO] Finished executing SearchDeployer 'Deploy' (Execution time = 1 secs)
+[INFO] Started executing BAM deployment
+[INFO] BAM URL = http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+[INFO] executing request http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+[INFO] Response HTTP Status code: 404
+[INFO] Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+[INFO] Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+[ERROR] BAM deployment failed. com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] com.emc.xcp.builder.deployment.AppDeployException: com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.execute(BamAccessUtil.java:232)
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.notifyDeploy(BamAccessUtil.java:160)
+
+[ERROR] 	at internal.com.emc.xcp.builder.deployment.deployers.BamDeployer.deploy(BamDeployer.java:67)
+
+[ERROR] 	at com.emc.xcp.builder.deployment.AppDeploymentManager.runDeployPhase(AppDeploymentManager.java:163)
+
+[ERROR] 	at com.emc.xcp.builder.deployment.AppDeploymentManager.deployApp(AppDeploymentManager.java:110)
+
+[ERROR] 	at com.emc.xms.commands.ApplicationDeploymentCommand.deploy(ApplicationDeploymentCommand.java:328)
+
+[ERROR] 	at com.emc.xms.commands.ApplicationDeploymentCommand.execute(ApplicationDeploymentCommand.java:223)
+
+[ERROR] 	at com.emc.xms.execution.impl.ExecutionService$CommandExecutionTask.run(ExecutionService.java:295)
+
+[ERROR] 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+
+[ERROR] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+
+[ERROR] 	at java.lang.Thread.run(Thread.java:619)
+
+[ERROR] Caused by: com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.execute(BamAccessUtil.java:223)
+
+[ERROR] 	... 10 more
+
+[ERROR] Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.execute(BamAccessUtil.java:223)
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.notifyDeploy(BamAccessUtil.java:160)
+
+[ERROR] 	at internal.com.emc.xcp.builder.deployment.deployers.BamDeployer.deploy(BamDeployer.java:67)
+
+[ERROR] 	at com.emc.xcp.builder.deployment.AppDeploymentManager.runDeployPhase(AppDeploymentManager.java:163)
+
+[ERROR] 	at com.emc.xcp.builder.deployment.AppDeploymentManager.deployApp(AppDeploymentManager.java:110)
+
+[ERROR] 	at com.emc.xms.commands.ApplicationDeploymentCommand.deploy(ApplicationDeploymentCommand.java:328)
+
+[ERROR] 	at com.emc.xms.commands.ApplicationDeploymentCommand.execute(ApplicationDeploymentCommand.java:223)
+
+[ERROR] 	at com.emc.xms.execution.impl.ExecutionService$CommandExecutionTask.run(ExecutionService.java:295)
+
+[ERROR] 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+
+[ERROR] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+
+[ERROR] 	at java.lang.Thread.run(Thread.java:619)
+
+[ERROR] Error
+
+[ERROR] BAM deployment failed. com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] com.emc.xcp.builder.deployment.AppDeployException: BAM deployment failed. com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] 	at internal.com.emc.xcp.builder.deployment.deployers.BamDeployer.deploy(BamDeployer.java:73)
+
+[ERROR] 	at com.emc.xcp.builder.deployment.AppDeploymentManager.runDeployPhase(AppDeploymentManager.java:163)
+
+[ERROR] 	at com.emc.xcp.builder.deployment.AppDeploymentManager.deployApp(AppDeploymentManager.java:110)
+
+[ERROR] 	at com.emc.xms.commands.ApplicationDeploymentCommand.deploy(ApplicationDeploymentCommand.java:328)
+
+[ERROR] 	at com.emc.xms.commands.ApplicationDeploymentCommand.execute(ApplicationDeploymentCommand.java:223)
+
+[ERROR] 	at com.emc.xms.execution.impl.ExecutionService$CommandExecutionTask.run(ExecutionService.java:295)
+
+[ERROR] 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+
+[ERROR] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+
+[ERROR] 	at java.lang.Thread.run(Thread.java:619)
+
+[ERROR] Caused by: com.emc.xcp.builder.deployment.AppDeployException: com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.execute(BamAccessUtil.java:232)
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.notifyDeploy(BamAccessUtil.java:160)
+
+[ERROR] 	at internal.com.emc.xcp.builder.deployment.deployers.BamDeployer.deploy(BamDeployer.java:67)
+
+[ERROR] 	... 8 more
+
+[ERROR] Caused by: com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.execute(BamAccessUtil.java:223)
+
+[ERROR] 	... 10 more
+
+[ERROR] com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] com.emc.xcp.builder.deployment.AppDeployException: com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.execute(BamAccessUtil.java:232)
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.notifyDeploy(BamAccessUtil.java:160)
+
+[ERROR] 	at internal.com.emc.xcp.builder.deployment.deployers.BamDeployer.deploy(BamDeployer.java:67)
+
+[ERROR] 	at com.emc.xcp.builder.deployment.AppDeploymentManager.runDeployPhase(AppDeploymentManager.java:163)
+
+[ERROR] 	at com.emc.xcp.builder.deployment.AppDeploymentManager.deployApp(AppDeploymentManager.java:110)
+
+[ERROR] 	at com.emc.xms.commands.ApplicationDeploymentCommand.deploy(ApplicationDeploymentCommand.java:328)
+
+[ERROR] 	at com.emc.xms.commands.ApplicationDeploymentCommand.execute(ApplicationDeploymentCommand.java:223)
+
+[ERROR] 	at com.emc.xms.execution.impl.ExecutionService$CommandExecutionTask.run(ExecutionService.java:295)
+
+[ERROR] 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+
+[ERROR] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+
+[ERROR] 	at java.lang.Thread.run(Thread.java:619)
+
+[ERROR] Caused by: com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.execute(BamAccessUtil.java:223)
+
+[ERROR] 	... 10 more
+
+[ERROR] Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] com.emc.xcp.builder.deployment.AppDeployException: Unable to connect to BAM server using URL:http://xcp20betacs:8000/bam-server/admin?datapolicy=CLEAN&deploymentmethod=FULL&deploymentenvironment=DEV&namespace=xcpcomm
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.execute(BamAccessUtil.java:223)
+
+[ERROR] 	at com.documentum.deployment.util.BamAccessUtil.notifyDeploy(BamAccessUtil.java:160)
+
+[ERROR] 	at internal.com.emc.xcp.builder.deployment.deployers.BamDeployer.deploy(BamDeployer.java:67)
+
+[ERROR] 	at com.emc.xcp.builder.deployment.AppDeploymentManager.runDeployPhase(AppDeploymentManager.java:163)
+
+[ERROR] 	at com.emc.xcp.builder.deployment.AppDeploymentManager.deployApp(AppDeploymentManager.java:110)
+
+[ERROR] 	at com.emc.xms.commands.ApplicationDeploymentCommand.deploy(ApplicationDeploymentCommand.java:328)
+
+[ERROR] 	at com.emc.xms.commands.ApplicationDeploymentCommand.execute(ApplicationDeploymentCommand.java:223)
+
+[ERROR] 	at com.emc.xms.execution.impl.ExecutionService$CommandExecutionTask.run(ExecutionService.java:295)
+
+[ERROR] 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+
+[ERROR] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+
+[ERROR] 	at java.lang.Thread.run(Thread.java:619)
+
+[ERROR] Error during execution command [namespace: management, resource: application, operation: deploy-application] : null
+
+[INFO] Command execution process has finished.
+[INFO] xms client finished running app deployment
+[INFO] Project 'xcp2_wf_java_methods' deployed
+[INFO] Finished deploying project 'xcp2_wf_java_methods' in 130secs
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2:47.971s
+[INFO] Finished at: Sun Nov 04 08:34:46 GMT-08:00 2012
+[INFO] Final Memory: 21M/52M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.emc.xcp.builder:xcp-deploy:1.0.6:run (xcp-deploy) on project xcp2_wf_java_methods: Xcp mojo executing command 'xcp-deploy' for project 'xcp2_wf_java_methods' failed unexpectedly: Deployment of project 'xcp2_wf_java_methods' failed -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

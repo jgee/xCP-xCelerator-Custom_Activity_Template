@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionflow:ActionFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actionflow="http://www.emc.com/xcp2/2010/actionflow" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" urn="urn:xcelwf:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/base_folder_1.actionflow" categoryId="com.emc.xcp.artifact.actionFlow" name="base_folder_1" label="Base Folder" initialState="//@states[id='viewState_base_folder_1_step_']">
+  <primaryElement>
+    <dataModel href="urn:xcp:com.emc.xcp.artifact.folder:Artifacts/Folders/dm_folder.folder#/"/>
+  </primaryElement>
+  <dataActions categoryId="com.emc.xcp.artifact.dataservice.dataaction" name="da_actionflow_base_folder_1" label="da_actionflow_base_folder_1">
+    <inputMappings name="object_name">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="subject">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="title">
+      <expression/>
+    </inputMappings>
+    <contract xsi:type="nsDataserviceContract:DataActionContract" href="urn:xcp:com.emc.xcp.artifact.folder:Artifacts/Folders/dm_folder.folder#//@dataActionContracts[name='da_def_create_dm_folder']"/>
+  </dataActions>
+  <states xsi:type="actionflow:EndState" id="success"/>
+  <states xsi:type="actionflow:EndState" id="error"/>
+  <states xsi:type="actionflow:ActionState" id="finish" dataAction="//@dataActions[name='da_actionflow_base_folder_1']">
+    <transitions on="success" to="//@states[id='success']"/>
+    <transitions on="error" to="//@states[id='error']"/>
+  </states>
+  <states xsi:type="actionflow:EndState" id="cancel"/>
+  <states xsi:type="actionflow:ViewState" id="viewState_base_folder_1_step_">
+    <transitions on="cancel" to="//@states[id='cancel']"/>
+    <transitions on="finish" to="//@states[id='finish']"/>
+    <step href="urn:xcelwf:com.emc.xcp.artifact.uistep:Artifacts/UI Steps/base_folder_1_step_.uistep#/"/>
+  </states>
+</actionflow:ActionFlow>

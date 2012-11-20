@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsJavaModule:JavaModule xmlns:nsJavaModule="http://xcp.emc.com/javamodule" urn="urn:xcel:com.emc.xcp.artifact.javamodule.category:Artifacts/Java Modules/packageattributeincrement.javamodule" categoryId="com.emc.xcp.artifact.javamodule.category" name="cust_act_tmpl_xcel_package_attribute_increment" label="Package Attribute Increment" implementationClass="com.emc.documentum.extensions.methods.PackageAttributeIncrement">
+
+<implementationJars contentPath="content/modules/custom_activity_template_xcelerator.jar"/>
+</nsJavaModule:JavaModule>

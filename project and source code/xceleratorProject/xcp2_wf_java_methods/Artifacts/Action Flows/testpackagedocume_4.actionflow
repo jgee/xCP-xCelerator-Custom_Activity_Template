@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionflow:ActionFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actionflow="http://www.emc.com/xcp2/2010/actionflow" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" urn="urn:xcelwf:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/testpackagedocume_4.actionflow" categoryId="com.emc.xcp.artifact.actionFlow" name="testpackagedocume_4" label="Complete task Manual task (testPackageDocumentAttaching)" initialState="//@states[id='finish']">
+  <inputs xsi:type="nsDataserviceContract:StructureElement" name="processVariables" label="Variables"/>
+  <inputs xsi:type="nsDataserviceContract:StructureElement" name="processPackages" label="Packages">
+    <elements xsi:type="nsDataserviceContract:StructureElement" name="p0" label="p0">
+      <elements xsi:type="nsDataserviceContract:AttributeElement" name="object_name" label="Name">
+        <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+      </elements>
+      <elements xsi:type="nsDataserviceContract:AttributeElement" name="id" label="Object Id">
+        <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+      </elements>
+    </elements>
+  </inputs>
+  <inputs xsi:type="nsDataserviceContract:AttributeElement" name="attachments" label="Attachments" repeating="true">
+    <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+  </inputs>
+  <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id" label="id">
+    <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+  </inputs>
+  <primaryElement>
+    <dataModel href="urn:xcelwf:com.emc.ide.artifact.process:Artifacts/Processes/testpackagedocume_1.process#//@activities[name='Manual%20task']/@taskContract"/>
+  </primaryElement>
+  <dataActions categoryId="com.emc.xcp.artifact.dataservice.dataaction" name="da_actionflow_" label="da_actionflow_">
+    <inputMappings name="processVariables">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="processPackages">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="processPackages.p0">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="processPackages.p0.object_name">
+      <expression exprStr="actionflow.Inputs.processPackages.p0.object_name"/>
+    </inputMappings>
+    <inputMappings name="processPackages.p0.id">
+      <expression exprStr="actionflow.Inputs.processPackages.p0.id"/>
+    </inputMappings>
+    <inputMappings name="attachments">
+      <expression exprStr="actionflow.Inputs.attachments"/>
+    </inputMappings>
+    <inputMappings name="id">
+      <expression exprStr="actionflow.Inputs.id"/>
+    </inputMappings>
+    <contract xsi:type="nsDataserviceContract:DataActionContract" href="urn:xcelwf:com.emc.ide.artifact.process:Artifacts/Processes/testpackagedocume_1.process#//@activities[name='Manual%20task']/@taskContract/@dataServiceContracts[name='da_def_complete_testpackagedocume_1_manual_task']"/>
+  </dataActions>
+  <states xsi:type="actionflow:EndState" id="success"/>
+  <states xsi:type="actionflow:EndState" id="error"/>
+  <states xsi:type="actionflow:ActionState" id="finish" dataAction="//@dataActions[name='da_actionflow_']">
+    <transitions on="success" to="//@states[id='success']"/>
+    <transitions on="error" to="//@states[id='error']"/>
+  </states>
+  <states xsi:type="actionflow:EndState" id="cancel"/>
+</actionflow:ActionFlow>
